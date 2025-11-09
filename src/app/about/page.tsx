@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function About() {
   return (
     <div>
@@ -6,19 +8,18 @@ export default function About() {
           
           {/* Image on left */}
           <div className="flex justify-center">
-           <img 
-  src="\images (5).jpg" 
-  alt="Pink tulip bouquet"
-  className="rounded-2xl shadow-lg w-full md:w-4/5 max-h-[60vh] object-contain transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl"
-/>
-
+            <Image
+              src="/images (5).jpg"
+              alt="Pink tulip bouquet"
+              width={500}
+              height={500}
+              className="rounded-2xl shadow-lg w-full md:w-4/5 max-h-[60vh] object-contain transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl"
+            />
           </div>
 
           {/* Text on right */}
           <div className="space-y-5">
-            <h2 className="text-4xl font-bold text-gray-800">
-              About Us
-            </h2>
+            <h2 className="text-4xl font-bold text-gray-800">About Us</h2>
 
             <h3 className="text-xl font-semibold text-pink-500">
               The Beauty of Nature in Every Bloom

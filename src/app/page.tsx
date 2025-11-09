@@ -1,6 +1,3 @@
-import Image from "next/image";
-import Nav from "./components/nav";
-import Link from "next/link";
 import Front from "./components/front";
 import About from "./about/page";
 import Products from "./products/page";

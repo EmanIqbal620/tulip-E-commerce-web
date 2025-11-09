@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Products() {
   const products = [
     { image: "/bouquet-purple-tulips-17145910.webp", name: "Purple Tulip Bouquet", price: 22 },
@@ -29,9 +31,11 @@ export default function Products() {
             className="w-80 bg-white rounded-2xl shadow-lg overflow-hidden relative group transition-transform duration-300 hover:scale-[1.02]"
           >
             {/* Image */}
-            <img
+            <Image
               src={product.image}
               alt={product.name}
+              width={320}
+              height={256}
               className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
             />
 
